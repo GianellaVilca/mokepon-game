@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mokepon</title>
         <link rel="stylesheet" href="./css/style_mokepon.css">
         <script defer src="./js/mokepon.js"></script> 
@@ -39,25 +40,32 @@
         <section class="seleccionar-ataque" id="seleccionar-ataque">
             <h2>Elige tu ataque:</h2>
             
-            <p>Tu mascota <strong><span id="mascota-jugador"></span></strong> tiene <strong><span id="vidas-jugador">3</span></strong> vidas</p>
-
-            <p>La mascota del enemigo <strong><span id="mascota-enemigo"></span></strong> tiene <strong><span id="vidas-enemigo">3</span></strong> vidas</p>
-            
             <div class="contenedor-botones">
-                <button id="boton-fuego" class="boton-fuego">Fuego 🔥</button>
-                <button id="boton-agua" class="boton-agua">Agua 💧</button>
-                <button id="boton-tierra" class="boton-tierra">Tierra 🌱</button>
+                <button id="boton-fuego" class="boton-ataque">Fuego 🔥</button>
+                <button id="boton-agua" class="boton-ataque">Agua 💧</button>
+                <button id="boton-tierra" class="boton-ataque">Tierra 🌱</button>
             </div>
 
-            <section id="mensajes" class="mensajes"></section>
+            <div class="contenedor-mensajes">
+                <p id="resultado"> Que inicie el combate!🐱‍👤</p>
+
+                <section id="reiniciar"> 
+                    <button id="boton-reiniciar" class="boton-reiniciar">Jugar de nuevo</button>
+                </section> 
+            </div>
+
+            <div class="contenedor-vidas">
+                <div class="caja-jugador"> 
+                    <p><span class="contador-vidas" id="vidas-jugador">3</span></p>
+                    <p><span class="nombre-mascota" id="mascota-jugador"></span></p> 
+                    <div><section class="contador-ataques" id="ataques-jugador"></section></div>
+                </div>
+                <div class="caja-enemigo">
+                    <p><span class="contador-vidas" id="vidas-enemigo">3</span></p>
+                    <p><span class="nombre-mascota" id="mascota-enemigo"></span></p> 
+                    <div><section class="contador-ataques" id="ataques-enemigo"></section></div>
+                </div> 
+            </div>
         </section>
-        
-        <section id="reiniciar">
-                <p>
-                    <img id="pokebola" src="./assets/imagenes/pokeball-pokemon.gif" alt="Game over">
-                    <br>
-                    <button id="boton-reiniciar" class="boton-reiniciar">Reiniciar</button>
-                </p>
-        </section> 
     </body>
 </html>

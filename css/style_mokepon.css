@@ -71,6 +71,7 @@ input:checked + label {
     background-color: rgba(255, 255, 255, 0.8);
     color: #000000;
     cursor: pointer;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .boton-seleccionar {
@@ -98,80 +99,44 @@ input:checked + label {
     align-items: center;
 }
 
-.boton-fuego {
+.boton-ataque {
     width: 150px;
     height: 150px;
     background-color: rgba(255, 255, 255, 0.5);
     color:#000000;
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'Press Start 2P', cursive;
     border-radius: 15px;
     border: 0;
     outline: 0;
     cursor: pointer;
     margin: 1rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.boton-fuego:hover {
+.boton-ataque:hover {
     background-color: rgba(124, 169, 236, 0.7);
     color:#000000;
 }
 
-.boton-agua {
-    width: 150px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color:#000000;
-    font-size: 16px;
-    font-family: 'Press Start 2P', cursive;
-    border-radius: 15px;
-    border:0;
-    outline: 0;
-    cursor: pointer;
-    margin: 1rem;
-}
-
-.boton-agua:hover {
-    background-color: rgba(124, 169, 236, 0.7);
-    color:#000000;
-}
-
-.boton-tierra {
-    width: 150px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color:#000000;
-    font-size: 16px;
-    font-family: 'Press Start 2P', cursive;
-    border-radius: 15px;
-    border:0;
-    outline: 0;
-    cursor: pointer;
-    margin: 1rem;
-}
-
-.boton-tierra:hover {
-    background-color: rgba(124, 169, 236, 0.7);
-    color:#000000;
-}
-
-#mensajes {
-    background-color: rgba(228,238,249,.2);
+.contenedor-mensajes {
+    background-color: rgba(228,238,249,.3);
     color:#000000;
     padding: 1.4rem;
 
-    width: 50%;
+    width: 320px;
     margin: auto;
     border-radius: 15px;
-}
 
-#pokebola {
-    width: 200px;
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .boton-reiniciar {
-    width: 280px;
+    width: 250px;
     height: 50px;
     background-color: rgba(29, 44, 94, 0.5);
     color: aliceblue;
@@ -181,13 +146,51 @@ input:checked + label {
     border:0;
     outline: 0;
     cursor: pointer;
-    border: 1rem;
+    margin: 1rem;
 }
 
 .boton-reiniciar:hover {
     background-color: rgba(29, 44, 94, 0.7)
 }
 
+.contenedor-vidas {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: space-between;
+    
+}
+
+.caja-jugador {
+    background-color: rgba(228,238,249,.3);
+    color:#000000;
+    padding: 1.4rem;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.caja-enemigo {
+    background-color: rgba(228,238,249,.3);
+    color:#000000;
+    padding: 1.4rem;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.contador-vidas {
+    font-size: 4rem;
+}
+
+.nombre-mascota {
+    font-size: 1.6rem;
+    color: rgba(29, 44, 94, 0.7);
+}
+
+.contador-ataques {
+    margin-top: 1rem;
+}
 
 /*.grid-container{
     display: grid;
